@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-12_16-41-21",
+            "content": "@@ -100,16 +100,17 @@\n fmt.Scan\n+f\n (&a, &b,\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-12_16-45-23",
+            "content": "package main\n\nimport( \n        \"fmt\"\n        \"math\"\n)\n\nfunc main() {\n\n    var a, b, c float64\n\n    fmt.Scan(&a, &b, &c)\n\n    var p float64 = (a + b + c)/ 2\n\n    var resultado float64\n    resultado = math.Sqrt(p * (p - a) * (p - b) * (p - c))\n\n    fmt.Printf(\"%.2f\\n\", resultado)\n\n}\n",
+            "lines": "21"
+        }
+    ]
+}

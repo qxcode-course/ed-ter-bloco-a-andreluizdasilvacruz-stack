@@ -1,0 +1,10 @@
+2026-03-12 15:34:25, MOVE, v:1, k:ed@pintando, mode:DOWN
+2026-03-12 15:34:29, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-12 15:35:48, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-12 15:35:50, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-12 16:41:21, EXEC, v:1, k:ed@pintando, mode:FULL, size:21, fail:COMP
+2026-03-12 16:45:23, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100, size:21
+2026-03-12 16:57:48, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-12 16:57:55, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-12 16:58:02, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100
+2026-03-12 16:59:17, SELF, v:1, k:ed@pintando, self:1, rate:100, study:60, friend:nao, concept:1, debug:1, refactor:1
