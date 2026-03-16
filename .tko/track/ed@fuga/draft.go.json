@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_18-09-14",
+            "content": "@@ -49,15 +49,48 @@\n ar h\n-, p, f,\n+ int%0A    var p int%0A    var f int%0A    var\n  d i\n@@ -179,24 +179,25 @@\n rintf(%22S%5Cn%22)\n+;\n %0A           \n@@ -234,16 +234,16 @@\n  == p %7B%0A\n-\n         \n@@ -263,16 +263,17 @@\n f(%22N%5Cn%22)\n+;\n %0A       \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-16_18-11-08",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\n    var h, p, f, d int\n\n    fmt.Scan(&h, &p, &f, &d)\n\n    for {\n\n        if f == h {\n            fmt.Printf(\"S\\n\")\n            break\n        }\n\n        if f == p {\n            fmt.Printf(\"N\\n\")\n            break\n        }\n\n        f = f + (d)\n\n        if f > 15 {\n            f = 0\n        }\n\n        if f < 0 {\n            f = 15\n        }\n    }\n}\n",
+            "lines": "33"
+        }
+    ]
+}
