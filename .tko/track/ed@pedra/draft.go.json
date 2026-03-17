@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_14-30-11",
+            "content": "@@ -512,18 +512,9 @@\n rint\n-f(%22%25d%5Cn%22, \n+(\n ganh\n@@ -526,21 +526,16 @@\n indice)%0A\n-    %0A\n %0A%0A%0A%0A    \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-03-17_14-31-12",
+            "content": "@@ -481,66 +481,8 @@\n  %7D%0A%0A\n-        %7D else %7B%0A            fmt.Printf(%22sem ganhador%5Cn%22)%0A\n     \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-17_14-33-21",
+            "content": "@@ -487,16 +487,73 @@\n       %7D \n+else %7B%0A            fmt.Printf(%22sem ganhador%5Cn%22)%0A        %7D\n %0A%0A    %7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-17_14-33-40",
+            "content": "@@ -500,93 +500,8 @@\n  %7D%0A%0A\n-    if ganhador_indice == -1 %7B%0A        fmt.Printf(%22sem ganhador%5Cn%22)%0A    %7D else %7B%0A    \n     \n@@ -536,22 +536,16 @@\n indice)%0A\n-    %7D%0A\n     %0A%0A%0A%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-17_14-37-10",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var n int \n    fmt.Scan(&n)\n\n    var ganhador_indice int = -1\n    var menor_diferenca int = 999\n\n    for i := 0; i < n; i++{\n        var a, b int \n        fmt.Scan(&a, &b)\n\n        if a >= 10 && b >= 10 {\n            dif := a - b\n           \n            if dif < 0 {\n                dif = - dif\n            }\n\n            if dif < menor_diferenca {\n                menor_diferenca = dif\n                ganhador_indice = i\n            }\n\n        } \n\n    }\n\n    if ganhador_indice == -1 {\n        fmt.Printf(\"sem ganhador\\n\")\n    } else {\n        fmt.Printf(\"%d\\n\", ganhador_indice)\n    }\n    \n\n\n\n\n    \n}\n",
+            "lines": "43"
+        }
+    ]
+}
