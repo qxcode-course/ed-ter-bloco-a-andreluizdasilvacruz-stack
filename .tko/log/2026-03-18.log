@@ -1,0 +1,7 @@
+2026-03-18 22:14:47, MOVE, v:1, k:ed@casais, mode:DOWN
+2026-03-18 22:14:49, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-18 22:14:52, EXEC, v:1, k:ed@casais, mode:FREE, size:5
+2026-03-18 22:15:21, EXEC, v:1, k:ed@casais, mode:FREE
+2026-03-18 22:17:59, EXEC, v:1, k:ed@casais, mode:FREE
+2026-03-18 22:59:58, EXEC, v:1, k:ed@casais, mode:FULL, size:35, fail:COMP
+2026-03-18 23:00:15, EXEC, v:1, k:ed@casais, mode:FULL, rate:100, size:35
