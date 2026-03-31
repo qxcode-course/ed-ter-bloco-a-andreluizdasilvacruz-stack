@@ -12,8 +12,18 @@
         },
         {
             "label": "2026-03-18_23-00-15",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\n    var n int\n    var cont int = 0\n    fmt.Scan(&n)\n\n    var vet[50] int\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&vet[i])\n    }\n\n    for i := 0; i < n; i++ {\n        if vet[i] == 0 {\n            continue\n        }\n\n        for j := i + 1; j < n; j++ {\n            if vet[i] == -vet[j] {\n                cont++\n                vet[i] = 0\n                vet[j] = 0\n                break\n            }\n        }\n    }\n\n    fmt.Println(cont)\n\n    \n}",
+            "content": "@@ -89,16 +89,37 @@\n an(&n)%0A%0A\n+    var vet%5B50%5D int%0A%0A\n     for \n@@ -151,13 +151,346 @@\n     \n+fmt.Scan(&vet%5Bi%5D)%0A    %7D%0A%0A    for i := 0; i %3C n; i++ %7B%0A        if vet%5Bi%5D == 0 %7B%0A            continue%0A        %7D%0A%0A        for j := i + 1; j %3C n; j++ %7B%0A            if vet%5Bi%5D == -vet%5Bj%5D %7B%0A                cont++%0A                vet%5Bi%5D = 0%0A                vet%5Bj%5D = 0%0A                break%0A            %7D%0A        %7D%0A    %7D%0A%0A    fmt.Println(cont)%0A\n %0A   \n- %7D\n  %0A%7D\n",
             "lines": "35"
+        },
+        {
+            "label": "2026-03-30_23-50-47",
+            "content": "@@ -35,16 +35,17 @@\n ain() %7B%0A\n+%0A\n     var \n@@ -93,28 +93,8 @@\n n)%0A%0A\n-    var vet%5B50%5Dint%0A%0A\n     \n@@ -130,341 +130,13 @@\n     \n-fmt.Scan(&vet%5Bi%5D)%0A    %7D%0A%0A    for i := 0; i %3C n; i++ %7B%0A        if vet%5Bi%5D == 0 %7B%0A            continue%0A        %7D%0A%0A        for j := i + 1; j %3C n; j++ %7B%0A            if vet%5Bi%5D == -vet%5Bj%5D %7B%0A                cont++%0A                vet%5Bi%5D = 0%0A                vet%5Bj%5D = 0%0A                break%0A            %7D%0A        %7D%0A    %7D%0A%0A    fmt.Println(cont)%0A%7D%0A\n+%0A    %7D %0A%7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_23-53-32",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var n int\n    var cont int = 0\n    fmt.Scan(&n)\n\n    var vet[50]int\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&vet[i])\n    }\n\n    for i := 0; i < n; i++ {\n        if vet[i] == 0 {\n            continue\n        }\n\n        for j := i + 1; j < n; j++ {\n            if vet[i] == -vet[j] {\n                cont++\n                vet[i] = 0\n                vet[j] = 0\n                break\n            }\n        }\n    }\n\n    fmt.Println(cont)\n}\n",
+            "lines": "32"
         }
     ]
 }
