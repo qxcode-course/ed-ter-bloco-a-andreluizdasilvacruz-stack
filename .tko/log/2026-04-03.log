@@ -1,0 +1,10 @@
+2026-04-03 00:08:30, EXEC, v:1, k:ed@pintando, mode:FULL, size:24, fail:COMP
+2026-04-03 00:09:10, EXEC, v:1, k:ed@pintando, mode:FULL, size:24, fail:COMP
+2026-04-03 00:09:36, EXEC, v:1, k:ed@pintando, mode:FULL, size:24, fail:COMP
+2026-04-03 00:09:47, EXEC, v:1, k:ed@pintando, mode:FULL, size:24, fail:COMP
+2026-04-03 00:10:23, EXEC, v:1, k:ed@pintando, mode:FULL, rate:0, size:24
+2026-04-03 00:10:38, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100, size:24
+2026-04-03 00:13:45, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100, size:20
+2026-04-03 00:14:00, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-04-03 00:14:58, SELF, v:1, k:ed@pintando, self:1, rate:100, study:12, friend:nao, concept:1, refactor:1
+2026-04-03 00:15:09, SELF, v:1, k:ed@pintando, self:1, rate:100, study:12, friend:nao, concept:1, refactor:1

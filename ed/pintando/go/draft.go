@@ -11,10 +11,9 @@ func main() {
 
     fmt.Scan(&a, &b, &c)
 
-    var p float64 = (a + b + c)/ 2
+    p := (a + b + c)/2
 
-    var resultado float64
-    resultado = math.Sqrt(p * (p - a) * (p - b) * (p - c))
+    resultado := math.Sqrt(p * (p - a) * (p - b) * (p - c))
 
     fmt.Printf("%.2f\n", resultado)
 

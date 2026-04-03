@@ -7,8 +7,48 @@
         },
         {
             "label": "2026-03-12_16-45-23",
-            "content": "package main\n\nimport( \n        \"fmt\"\n        \"math\"\n)\n\nfunc main() {\n\n    var a, b, c float64\n\n    fmt.Scan(&a, &b, &c)\n\n    var p float64 = (a + b + c)/ 2\n\n    var resultado float64\n    resultado = math.Sqrt(p * (p - a) * (p - b) * (p - c))\n\n    fmt.Printf(\"%.2f\\n\", resultado)\n\n}\n",
+            "content": "@@ -63,10 +63,220 @@\n in() %7B%0A%0A\n+    var a, b, c float64%0A%0A    fmt.Scan(&a, &b, &c)%0A%0A    var p float64 = (a + b + c)/ 2%0A%0A    var resultado float64%0A    resultado = math.Sqrt(p * (p - a) * (p - b) * (p - c))%0A%0A    fmt.Printf(%22%25.2f%5Cn%22, resultado)%0A%0A\n %7D%0A\n",
             "lines": "21"
+        },
+        {
+            "label": "2026-04-02_23-58-23",
+            "content": "@@ -67,181 +67,6 @@\n  %7B%0A%0A\n-    var a, b, c float%0A%0A    fmt.Scan(&a, &b, &c)%0A%0A    var p float = (a + b + c)/2%0A%0A    resultado := math.Sqrt(p * (p - a) * (p - b) * (p - c))%0A%0A    fmt.Println(resultado)%0A%0A%0A%0A%0A%0A\n %7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-03_00-08-30",
+            "content": "@@ -223,18 +223,11 @@\n rint\n-f(%22%25.2f%22, \n+ln(\n resu\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-03_00-09-10",
+            "content": "@@ -149,20 +149,16 @@\n /2%0A%0A    \n-var \n resultad\n@@ -159,22 +159,17 @@\n sultado \n-float \n+:\n = math.S\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-03_00-09-36",
+            "content": "@@ -84,18 +84,16 @@\n  c float\n-32\n %0A%0A    fm\n@@ -127,18 +127,16 @@\n  p float\n-32\n  = (a + \n@@ -172,10 +172,8 @@\n loat\n-32\n  = m\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-03_00-09-47",
+            "content": "@@ -84,18 +84,18 @@\n  c float\n-64\n+32\n %0A%0A    fm\n@@ -129,18 +129,18 @@\n  p float\n-64\n+32\n  = (a + \n@@ -176,10 +176,10 @@\n loat\n-64\n+32\n  = m\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-03_00-10-23",
+            "content": "@@ -245,10 +245,8 @@\n %25.2f\n-%5Cn\n %22, r\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-03_00-10-38",
+            "content": "@@ -122,11 +122,22 @@\n     \n-p :\n+var p float64 \n = (a\n@@ -153,16 +153,20 @@\n /2%0A%0A    \n+var \n resultad\n@@ -171,9 +171,16 @@\n ado \n-:\n+float64 \n = ma\n@@ -258,10 +258,14 @@\n ltado)%0A%0A\n+%0A%0A%0A%0A\n %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-03_00-13-45",
+            "content": "package main\n\nimport( \n        \"fmt\"\n        \"math\"\n)\n\nfunc main() {\n\n    var a, b, c float64\n\n    fmt.Scan(&a, &b, &c)\n\n    p := (a + b + c)/2\n\n    resultado := math.Sqrt(p * (p - a) * (p - b) * (p - c))\n\n    fmt.Printf(\"%.2f\\n\", resultado)\n\n}\n",
+            "lines": "20"
         }
     ]
 }
