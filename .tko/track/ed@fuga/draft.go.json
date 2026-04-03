@@ -7,7 +7,57 @@
         },
         {
             "label": "2026-03-16_18-11-08",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\n    var h, p, f, d int\n\n    fmt.Scan(&h, &p, &f, &d)\n\n    for {\n\n        if f == h {\n            fmt.Printf(\"S\\n\")\n            break\n        }\n\n        if f == p {\n            fmt.Printf(\"N\\n\")\n            break\n        }\n\n        f = f + (d)\n\n        if f > 15 {\n            f = 0\n        }\n\n        if f < 0 {\n            f = 15\n        }\n    }\n}\n",
+            "content": "@@ -34,11 +34,359 @@\n main() %7B\n+%0A%0A    var h, p, f, d int%0A%0A    fmt.Scan(&h, &p, &f, &d)%0A%0A    for %7B%0A%0A        if f == h %7B%0A            fmt.Printf(%22S%5Cn%22)%0A            break%0A        %7D%0A%0A        if f == p %7B%0A            fmt.Printf(%22N%5Cn%22)%0A            break%0A        %7D%0A%0A        f = f + (d)%0A%0A        if f %3E 15 %7B%0A            f = 0%0A        %7D%0A%0A        if f %3C 0 %7B%0A            f = 15%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-03_01-01-43",
+            "content": "@@ -39,64 +39,6 @@\n ) %7B%0A\n-    var h, p, f, d string%0A%0A    fmt.Scan(&h, &p, &f, &d)%0A%0A%0A\n %7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-03_01-07-21",
+            "content": "@@ -96,199 +96,7 @@\n d)%0A%0A\n-    for %7B%0A        if f == h %7B%0A            fmt.Println(%22S%22)%0A            break%0A        %7D %0A%0A        if f == p %7B%0A            fmt.Println(%22N%22)%0A            break%0A        %7D%0A%0A        f = f + d%0A    %7D%0A%0A\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-03_01-13-06",
+            "content": "@@ -279,11 +279,9 @@\n f + \n-(d)\n+d\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-03_01-14-54",
+            "content": "@@ -78,25 +78,9 @@\n Scan\n-f(%22%25s %25s %25s %25s%22, \n+(\n &h, \n@@ -275,17 +275,19 @@\n f = f + \n-d\n+(d)\n %0A    %7D%0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-03_01-17-48",
+            "content": "@@ -296,106 +296,8 @@\n  + d\n-%0A%0A        if f %3C 0 %7B%0A            f = 15%0A        %7D%0A%0A        if f %3E 15 %7B%0A            f = 0%0A        %7D\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-03_01-20-18",
+            "content": "@@ -54,19 +54,22 @@\n p, f, d \n+str\n in\n-t\n+g\n %0A%0A    fm\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-03_01-20-45",
+            "content": "@@ -292,11 +292,9 @@\n f + \n-(d)\n+d\n %0A%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-03_01-23-17",
+            "content": "@@ -79,18 +79,18 @@\n f(%22%25\n-d %25d %25d %25d\n+s %25s %25s %25s\n %22, &\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-03_01-26-57",
+            "content": "@@ -71,17 +71,33 @@\n fmt.Scan\n-(\n+f(%22%25d %25d %25d %25d%22, \n &h, &p, \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-03_01-27-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var h, p, f, d int\n\n    fmt.Scan(&h, &p, &f, &d)\n\n    for {\n        if f == h {\n            fmt.Println(\"S\")\n            break\n        } \n\n        if f == p {\n            fmt.Println(\"N\")\n            break\n        }\n\n        f = f + (d)\n\n        if f < 0 {\n            f = 15\n        }\n\n        if f > 15 {\n            f = 0\n        }\n    }\n\n\n}\n",
             "lines": "33"
         }
     ]
