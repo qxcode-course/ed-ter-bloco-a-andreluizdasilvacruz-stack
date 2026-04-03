@@ -3,27 +3,30 @@ package main
 import "fmt"
 
 func main() {
+    var nome string
+    fmt.Scan(&nome)
 
-    var pessoa string
     var idade int
+    fmt.Scan(&idade)
 
-    //fmt.Scanf("%s %d", &pessoa, &idade)
-    fmt.Scan(&pessoa, &idade)
-    
-    
+    var classificacao string
 
     if idade < 12 {
-        fmt.Printf("%s eh crianca\n", pessoa)
+        classificacao = "crianca"
+
     } else if idade < 18 {
-        fmt.Printf("%s eh jovem\n", pessoa)
+        classificacao = "jovem"
+
     } else if idade < 65 {
-        fmt.Printf("%s eh adulto\n", pessoa)
+        classificacao = "adulto"
+
     } else if idade < 1000 {
-        fmt.Printf("%s eh idoso\n", pessoa)
+        classificacao = "idoso"
+
     } else {
-        fmt.Printf("%s eh mumia\n", pessoa)
+        classificacao = "mumia"
     }
 
+    fmt.Printf("%s eh %s\n", nome, classificacao)
 
-    
 }
