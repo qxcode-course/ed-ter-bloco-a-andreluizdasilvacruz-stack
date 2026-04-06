@@ -1,0 +1,3 @@
+- Tempo que levou: 120 min
+- Nível de dificuldade: Médio
+- Teve ajuda? Sim, para configurar a biblioteca visual e entender a recursão dos galhos.120

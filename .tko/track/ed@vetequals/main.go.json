@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_19-36-54",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\n// iguais compara os elementos recursivamente sem usar len() ou la\u00e7os.\n// Utiliza o \u00edndice 'i' para andar pelos vetores at\u00e9 encontrar a sentinela.\nfunc iguais(v1, v2 []string, i int) bool {\n\t// Caso base 1: ambos chegaram na sentinela ao mesmo tempo\n\tif v1[i] == \"END\" && v2[i] == \"END\" {\n\t\treturn true\n\t}\n\t\n\t// Caso base 2: um chegou na sentinela antes do outro (tamanhos diferentes)\n\tif v1[i] == \"END\" || v2[i] == \"END\" {\n\t\treturn false\n\t}\n\t\n\t// Caso base 3: os elementos atuais s\u00e3o diferentes\n\tif v1[i] != v2[i] {\n\t\treturn false\n\t}\n\t\n\t// Chamada recursiva avan\u00e7ando o \u00edndice\n\treturn iguais(v1, v2, i+1)\n}\n\n// limpaVetor remove os colchetes, extrai os n\u00fameros e adiciona a sentinela\nfunc limpaVetor(linha string) []string {\n\tlinha = strings.ReplaceAll(linha, \"[\", \" \")\n\tlinha = strings.ReplaceAll(linha, \"]\", \" \")\n\t\n\t// Fields j\u00e1 cuida de separar ignorando os espa\u00e7os em branco extras\n\telementos := strings.Fields(linha)\n\t\n\t// Adiciona a sentinela no final para sabermos onde o vetor acaba\n\telementos = append(elementos, \"END\")\n\t\n\treturn elementos\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\t\n\tscanner.Scan()\n\tlinha1 := scanner.Text()\n\t\n\tscanner.Scan()\n\tlinha2 := scanner.Text()\n\t\n\tvet1 := limpaVetor(linha1)\n\tvet2 := limpaVetor(linha2)\n\t\n\tif iguais(vet1, vet2, 0) {\n\t\tfmt.Println(\"iguais\")\n\t} else {\n\t\tfmt.Println(\"diferentes\")\n\t}\n}",
+            "lines": "63"
+        }
+    ]
+}
